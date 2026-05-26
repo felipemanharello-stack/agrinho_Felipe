@@ -1,93 +1,103 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte, Futuro Sustentável</title>
+    <title>AgroVida | Agricultura Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="header-container">
-            <h1 class="logo">Agro<span>Sustentável</span></h1>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#praticas">Práticas</a></li>
-                    <li><a href="#contato">Contato</a></li>
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <h2>Agro<span>Vida</span></h2>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
                 </ul>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                    &#9776;
+                </button>
             </nav>
-            <button id="theme-toggle" class="btn-theme" aria-label="Alternar modo escuro">🌓 Modo Escuro</button>
         </div>
     </header>
 
-    <main>
-        
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h2>Agro forte, futuro sustentável</h2>
-                <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
-                <button id="btn-cta" class="btn-primary">Saiba Mais</button>
-                <p id="dynamic-message" class="hidden-msg"></p>
-            </div>
-        </section>
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>Cultivando o Futuro da Terra</h1>
+            <p>A agricultura sustentável equilibra a produção de alimentos com a preservação ambiental, garantindo recursos para as próximas gerações.</p>
+            <a href="#pilares" class="btn">Saiba Mais</a>
+        </div>
+    </section>
 
-        <section id="sobre" class="about-section">
-            <div class="container">
-                <h3>O Equilíbrio é o Caminho</h3>
-                <p>Produzir alimentos de forma eficiente sem esgotar os recursos naturais é o maior desafio e compromisso do agro moderno. Através de tecnologia de ponta e respeito à biodiversidade, mostramos que é possível crescer protegendo o planeta.</p>
-            </div>
-        </section>
-
-        <section id="praticas" class="cards-section">
-            <div class="container">
-                <h3>Nossos Pilares</h3>
-                <div class="cards-grid">
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad451?auto=format&fit=crop&w=400&q=80" alt="Irrigação gota a gota no campo">
-                        <h4>Gestão de Água</h4>
-                        <p>Sistemas de irrigação inteligente que reduzem o desperdício e aproveitam a água da chuva.</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?auto=format&fit=crop&w=400&q=80" alt="Plantação verdejante e saudável">
-                        <h4>Solo Vivo</h4>
-                        <p>Uso de rotação de culturas e adubação orgânica para manter a terra fértil por gerações.</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=400&q=80" alt="Energia solar em propriedades rurais">
-                        <h4>Energia Limpa</h4>
-                        <p>Integração de painéis solares e biomassa na matriz energética das propriedades rurais.</p>
-                    </div>
+    <section id="pilares" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Os Três Pilares da Sustentabilidade</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Ambiental</h3>
+                    <p>Preservação da biodiversidade, conservação da água, saúde do solo e redução drástica do uso de defensivos químicos poluentes.</p>
+                </div>
+                <div class="card">
+                    <h3>Econômico</h3>
+                    <p>Garantia de que as práticas sustentáveis gerem lucro para o agricultor, tornando o negócio viável a longo prazo.</p>
+                </div>
+                <div class="card">
+                    <h3>Social</h3>
+                    <p>Valorização do trabalhador do campo, apoio às comunidades locais e garantia de segurança alimentar para a população.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contato" class="contact-section">
-            <div class="container">
-                <h3>Assine nossa Newsletter</h3>
-                <p>Receba dicas e novidades sobre o futuro da agricultura sustentável.</p>
-                
-                <form id="contact-form" class="form-sustentavel">
-                    <div class="form-group">
-                        <input type="text" id="form-name" placeholder="Seu Nome" aria-label="Seu Nome">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="form-email" placeholder="Seu E-mail" aria-label="Seu E-mail">
-                    </div>
-                    <button type="submit" class="btn-submit">Enviar</button>
-                    <p id="form-feedback" class="form-feedback"></p>
-                </form>
+    <section id="tecnologias" class="bg-light section-padding">
+        <div class="container">
+            <h2 class="section-title">Tecnologias e Práticas Verdes</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <h4>Rotação de Culturas</h4>
+                    <p>Alternar espécies de plantas na mesma área melhora a fertilidade do solo e quebra o ciclo de pragas naturalmente.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Irrigação Gota a Gota</h4>
+                    <p>Sistemas inteligentes que direcionam a água direto à raiz da planta, reduzindo o desperdício de recursos hídricos em até 60%.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Adubação Orgânica</h4>
+                    <p>Uso de compostagem e resíduos vegetais para nutrir a terra sem a necessidade de fertilizantes sintéticos agressivos.</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
+    <section id="simulador" class="section-padding">
+        <div class="container class-simulador">
+            <h2 class="section-title">Simulador de Impacto Verde</h2>
+            <p class="sub-center">Descubra quanta água você economiza ao adotar a irrigação inteligente por hectare ao ano!</p>
+            
+            <div class="form-simulador">
+                <label for="hectares">Quantidade de Hectares:</label>
+                <input type="number" id="hectares" min="1" placeholder="Ex: 5" value="1">
+                <button id="btnCalcular" class="btn">Calcular Economia</button>
+            </div>
 
-    <footer class="main-footer">
-        <p>&copy; 2026 AgroSustentável. Todos os direitos reservados.</p>
-        <p>Desenvolvido em prol do meio ambiente.</p>
+            <div id="resultado" class="resultado-box hidden">
+                <p>Ao migrar para a agricultura sustentável, você economizará aproximadamente:</p>
+                <h3><span id="litrosAgua">0</span> Litros de Água / Ano</h3>
+                <p class="detalhe">*Cálculo baseado na média de economia de sistemas de gotejamento automatizados.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 AgroVida. Desenvolvido para um futuro mais verde.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
