@@ -1,1 +1,95 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="logo">Agro<span>Sustentável</span></h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#praticas">Práticas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn-theme" aria-label="Alternar modo escuro">🌓 Modo Escuro</button>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Agro forte, futuro sustentável</h2>
+                <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+                <button id="btn-cta" class="btn-primary">Saiba Mais</button>
+                <p id="dynamic-message" class="hidden-msg"></p>
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <h3>O Equilíbrio é o Caminho</h3>
+                <p>Produzir alimentos de forma eficiente sem esgotar os recursos naturais é o maior desafio e compromisso do agro moderno. Através de tecnologia de ponta e respeito à biodiversidade, mostramos que é possível crescer protegendo o planeta.</p>
+            </div>
+        </section>
+
+        <section id="praticas" class="cards-section">
+            <div class="container">
+                <h3>Nossos Pilares</h3>
+                <div class="cards-grid">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad451?auto=format&fit=crop&w=400&q=80" alt="Irrigação gota a gota no campo">
+                        <h4>Gestão de Água</h4>
+                        <p>Sistemas de irrigação inteligente que reduzem o desperdício e aproveitam a água da chuva.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?auto=format&fit=crop&w=400&q=80" alt="Plantação verdejante e saudável">
+                        <h4>Solo Vivo</h4>
+                        <p>Uso de rotação de culturas e adubação orgânica para manter a terra fértil por gerações.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=400&q=80" alt="Energia solar em propriedades rurais">
+                        <h4>Energia Limpa</h4>
+                        <p>Integração de painéis solares e biomassa na matriz energética das propriedades rurais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <h3>Assine nossa Newsletter</h3>
+                <p>Receba dicas e novidades sobre o futuro da agricultura sustentável.</p>
+                
+                <form id="contact-form" class="form-sustentavel">
+                    <div class="form-group">
+                        <input type="text" id="form-name" placeholder="Seu Nome" aria-label="Seu Nome">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" placeholder="Seu E-mail" aria-label="Seu E-mail">
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                    <p id="form-feedback" class="form-feedback"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 AgroSustentável. Todos os direitos reservados.</p>
+        <p>Desenvolvido em prol do meio ambiente.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
